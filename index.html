@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTask | Professional Productivity</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body id="body">
+    <div class="mesh-gradient"></div>
+    
+    <main class="app-container" id="app">
+        <header>
+            <div class="header-left">
+                <div id="date-display">Mon, Jan 01</div>
+                <div class="streak-container">
+                    <span id="streak-label">KILLSTREAK: </span>
+                    <span id="streak-count">0</span>
+                </div>
+            </div>
+            
+            <h1><span>Pro</span>Task</h1>
+            
+            <div class="header-right">
+                <button id="focus-toggle" title="Neural Focus Mode">👁️ Focus</button>
+            </div>
+        </header>
+
+        <section class="input-section">
+            <input type="text" id="todo-input" placeholder="Initialize new task..." autocomplete="off">
+            <button id="add-btn">Add</button>
+        </section>
+
+        <ul id="todo-list"></ul>
+
+        <div class="stats">
+            <span id="task-count">0 missions active</span>
+            <button id="clear-all">Wipe System</button>
+        </div>
+    </main>
+
+    <audio id="snd-shing" src="https://assets.mixkit.co/active_storage/sfx/2185/2185-preview.mp3"></audio>
+
+    <script src="logic.js"></script>
+</body>
+</html>
